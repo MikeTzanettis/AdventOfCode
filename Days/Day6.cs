@@ -359,17 +359,5 @@ namespace AdventOfCode
             }
             return 0;
         }
-        static char[] GetColumn(char[,] array, int columnIndex)
-        {
-            int rowCount = array.GetLength(0); // Number of rows
-            char[] column = new char[rowCount];
-
-            for (int i = 0; i < rowCount; i++)
-            {
-                column[i] = array[i, columnIndex];
-            }
-
-            return column;
-        }
     }
 }
